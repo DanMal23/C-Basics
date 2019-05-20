@@ -3,7 +3,7 @@ using namespace std;
 
 int cash = 50;
 void playGame(int wager) {
-    char Ball[3] = {'R', 'G', 'B'}; //array of 3 characters
+    char Ball[3] = {'G', 'R', 'B'}; //array of 3 characters
     cout << "\n";
     srand(time(NULL)); // function sets the seed of the random number generator algorithm 
     int i;
@@ -12,7 +12,7 @@ void playGame(int wager) {
         int y = rand() % 3;
         int tempVar = Ball[x];  
         Ball[x] = Ball[y];
-        Ball[y] = tempVar; //swapping chars  (x and y)
+        Ball[y] = tempVar; //x and y swap
     }
     int ballNum;
     cout << "Guess the number of the RED ball: 1,2 or 3?  ";
@@ -20,7 +20,7 @@ void playGame(int wager) {
     if (Ball[ballNum - 1] == 'R') {
         cash += wager;  //incrementing cash upon correct answer
         cout << "\033[32m" << "You Won! " << "\033[0m"; //green font 
-        cout << "\033[34m" << " => Total cash: $" << cash << "\033[0m \n"; //blue font
+        cout << "\033[34m" << "       => Total cash: $" << cash << "\033[0m \n"; //blue font
     } else {
         cash -= wager;
         cout << "\033[31m" << "You Lost :(    " << "\033[0m"; //red font
