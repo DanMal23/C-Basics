@@ -39,5 +39,6 @@ void printData (int newData [TEMP][CITY]) {
             cout << newData [j][i] << " ";
         }
     }
-cout << endl;
+	cout << endl;
+	return 0;
 }

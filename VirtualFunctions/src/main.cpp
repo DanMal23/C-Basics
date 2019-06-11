@@ -100,4 +100,6 @@ cha->UsePackageManager(); //ArchLinuxOS method called
 cha->UseRepo(); //ArchLinuxOS method called
 
 cin.get();
+
+return 0;
 }

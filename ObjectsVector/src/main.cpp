@@ -49,4 +49,5 @@ void printVector (const vector <ProgrLang>& newLanguages) {
         cout << "Year: " << newLanguages[i].getYear() << endl;
     }
     cout << endl;
+    return 0;
 }

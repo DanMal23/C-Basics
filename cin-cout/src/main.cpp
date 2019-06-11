@@ -31,5 +31,5 @@ int main() {
          << " (Age: " << age << ")" 
          << "\nGraduated from: " << edu << endl;
 
-       return 0; 
+    return 0; 
 }

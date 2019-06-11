@@ -110,5 +110,6 @@ for(int i=6; i>0; i--)
       }
       cout << endl;
    }
+   return 0;
 
 }

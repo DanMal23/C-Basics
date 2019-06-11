@@ -59,4 +59,5 @@ int main() {
         playGame(wager); }
           
     }
+    return 0;
 }

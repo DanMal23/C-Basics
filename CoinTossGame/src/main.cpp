@@ -63,4 +63,5 @@ int main() {
         toss(wager); }
           
     }
+    return 0;
 }
