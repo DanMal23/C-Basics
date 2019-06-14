@@ -1,6 +1,7 @@
 
 /*Virtual Functions
 allow to create methods in subclasses*/
+//example of runtime polymorphism
 
 #include <iostream>
 #include <string>
@@ -84,20 +85,20 @@ int main() {
 ArchLinuxOS *am = new Manjaro();
 am->ShowDevelopers();
 am->ShowYearRelease();
-am->UsePackageManager(); //ArchLinuxOS method is called as it's overriden
-am->UseRepo(); //ArchLinuxOS method called
+am->UsePackageManager(); //ArchLinuxOS function is called as it's overriden in base class 
+am->UseRepo(); //ArchLinuxOS function called
 
 ArchLinuxOS *al = new ArcoLinux();
 al->ShowDevelopers();
 al->ShowYearRelease();
-al->UsePackageManager(); //ArchLinuxOS method called 
-al->UseRepo(); //ArchLinuxOS method called
+al->UsePackageManager(); //ArchLinuxOS function called 
+al->UseRepo(); //ArchLinuxOS function called
 
 ArchLinuxOS *cha = new Chakra();
 cha->ShowDevelopers();
 cha->ShowYearRelease();
-cha->UsePackageManager(); //ArchLinuxOS method called 
-cha->UseRepo(); //ArchLinuxOS method called
+cha->UsePackageManager(); 
+cha->UseRepo(); 
 
 cin.get();
 
